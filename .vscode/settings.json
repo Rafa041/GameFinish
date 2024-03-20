@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/41edf5ad-c1bf-4a4e-87dc-0a6be9489c6a/resourceGroups/GameBusca/providers/Microsoft.Web/sites/WebGameBusca",
-    "appService.deploySubpath": "dist"
-}
