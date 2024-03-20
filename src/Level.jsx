@@ -24,7 +24,7 @@ export function BlockStart({ position = [ 0, 0, 0 ] })
                 position={ [ 0.75, 0.65, 0 ] }
                 rotation-y={ - 0.25 }
             >
-                Busca Usca
+                Busca Jogo
                 <meshBasicMaterial toneMapped={ false } />
             </Text>
         </Float>
@@ -34,7 +34,7 @@ export function BlockStart({ position = [ 0, 0, 0 ] })
 
 export function BlockEnd({ position = [ 0, 0, 0 ] })
 {
-    const cat = useGLTF('/cat.glb')
+    const cat = useGLTF('/gato.glb')
 
     cat.scene.children.forEach((mesh) =>
     {
@@ -47,12 +47,12 @@ export function BlockEnd({ position = [ 0, 0, 0 ] })
             scale={ 1 }
             position={ [ 0, 2.25, 2 ] }
         >
-            The end
+            Fim
             <meshBasicMaterial toneMapped={ false } />
         </Text>
         <mesh geometry={ boxGeometry } material={ floor1Material } position={ [ 0, 0, 0 ] } scale={ [ 4, 0.2, 4 ] } receiveShadow />
         <RigidBody type="fixed" colliders="hull" position={ [ 0, 1, 0 ] } restitution={ 0.2 } friction={ 0 }>
-            <primitive object={ cat.scene } scale={ 0.1 } />
+            <primitive object={ cat.scene } scale={ 0.3 } />
         </RigidBody>
     </group>
 }
